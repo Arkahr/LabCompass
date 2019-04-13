@@ -17,6 +17,8 @@ ApplicationModel::ApplicationModel(QObject* parent) : QObject(parent)
   m_newVersionAvailable = false;
   m_logFileOpen = true;
   m_atPlaza = false;
+  //TODO
+  //here you can _dirty_ activate room changer by setting m_inLab = true, and m_currentRoomDetermined = false
   m_inLab = false;
   m_currentRoomDetermined = true;
   m_isValid = false;

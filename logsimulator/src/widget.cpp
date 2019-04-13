@@ -36,6 +36,10 @@ Widget::Widget(Settings* settings, QWidget* parent) :
 
   connect(ui->startButton, &QPushButton::clicked,
           [this]() { emit labStarted(); });
+          //TODO here you have to create and connect ui part/button the same way
+
+  connect(ui->resetButton, &QPushButton::clicked,
+          [this]() { emit labStarted(); });
 
   connect(ui->izaroStartButton, &QPushButton::clicked,
           [this]() { emit izaroBattleStarted(); });

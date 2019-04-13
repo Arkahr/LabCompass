@@ -16,7 +16,9 @@ InstructionItem {
     'Merciless': 'qrc:/images/instruction/loaded-map-merciless.svg',
     'Uber': 'qrc:/images/instruction/loaded-map-uber.svg',
     '': ''
-  }[difficulty]
+  }
+  //TODO why do I commented this line ?
+  //[difficulty]
 
   Text {
     color: Global.primaryTextColor

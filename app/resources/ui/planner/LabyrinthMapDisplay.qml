@@ -177,6 +177,7 @@ Rectangle {
   }
 
   RoomClickModeSwitch {
+    /*todo*/
     id: roomClickModeSwitch
 
     property int selectedIndex: 0
@@ -185,6 +186,8 @@ Rectangle {
                  !Global.model.currentRoomDetermined ? 1 :
                  selectedIndex
     enabled: Global.model.inLab && Global.model.currentRoomDetermined
+    //probably:global.model.inLab is initialised when you click the key to lab
+    //todo: find where/what determines where inLab is initialized - and give ability to initialize it anyway if outside lab
     visible: Global.model.isValid
 
     anchors {
